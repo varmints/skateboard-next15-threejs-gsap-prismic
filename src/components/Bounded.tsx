@@ -1,28 +1,33 @@
-import { CSSProperties, ElementType, ReactNode } from "react";
+import {
+  CSSProperties,
+  ElementType,
+  ReactNode,
+  ComponentPropsWithRef,
+} from "react";
 import clsx from "clsx";
 
-type BoundedProps = {
-  as?: ElementType;
+type BoundedProps<T extends ElementType = "section"> = {
+  as?: T;
   className?: string;
   style?: CSSProperties;
   children: ReactNode;
-};
+} & ComponentPropsWithRef<T>; // ✅ Teraz propsy są zgodne z dynamicznym komponentem
 
-export function Bounded({
-  as: Comp = "section",
+export function Bounded<T extends ElementType = "section">({
+  as: Component = "section", // ✅ Bez rzutowania
   className,
   children,
   ...restProps
-}: BoundedProps) {
+}: BoundedProps<T>) {
   return (
-    <Comp
+    <Component
       className={clsx(
         "px-6 ~py-10/16 [.header+&]:pt-44 [.header+&]:md:pt-32",
         className
       )}
-      {...restProps}
+      {...(restProps as ComponentPropsWithRef<T>)} // ✅ Poprawne przekazanie propsów
     >
       <div className="mx-auto w-full max-w-6xl">{children}</div>
-    </Comp>
+    </Component>
   );
 }

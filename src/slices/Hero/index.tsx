@@ -25,7 +25,7 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 /**
  * Component for "Hero" Slices.
  */
-const Hero = ({ slice }: HeroProps): JSX.Element => {
+const Hero = ({ slice }: HeroProps) => {
   const deckTextureURL =
     asImageSrc(slice.primary.skateboard_deck_texture) || DEFAULT_DECK_TEXTURE;
   const wheelTextureURL =

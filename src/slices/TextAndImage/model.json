@@ -74,8 +74,8 @@
       "items": {}
     },
     {
-      "id": "imgeOnLeft",
-      "name": "Imge on left",
+      "id": "imageOnLeft",
+      "name": "Image on left",
       "docURL": "...",
       "version": "initial",
       "description": "Default",

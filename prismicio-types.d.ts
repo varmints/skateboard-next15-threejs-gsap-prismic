@@ -784,80 +784,80 @@ export type TextAndImageSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *TextAndImage → Imge on left → Primary*
+ * Primary content in *TextAndImage → Image on left → Primary*
  */
-export interface TextAndImageSliceImgeOnLeftPrimary {
+export interface TextAndImageSliceImageOnLeftPrimary {
   /**
-   * Theme field in *TextAndImage → Imge on left → Primary*
+   * Theme field in *TextAndImage → Image on left → Primary*
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **API ID Path**: text_and_image.imgeOnLeft.primary.theme
+   * - **API ID Path**: text_and_image.imageOnLeft.primary.theme
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   theme: prismic.SelectField<"Blue" | "Orange" | "Navy" | "Lime">;
 
   /**
-   * Heading field in *TextAndImage → Imge on left → Primary*
+   * Heading field in *TextAndImage → Image on left → Primary*
    *
    * - **Field Type**: Title
    * - **Placeholder**: *None*
-   * - **API ID Path**: text_and_image.imgeOnLeft.primary.heading
+   * - **API ID Path**: text_and_image.imageOnLeft.primary.heading
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   heading: prismic.TitleField;
 
   /**
-   * Body field in *TextAndImage → Imge on left → Primary*
+   * Body field in *TextAndImage → Image on left → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: text_and_image.imgeOnLeft.primary.body
+   * - **API ID Path**: text_and_image.imageOnLeft.primary.body
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   body: prismic.RichTextField;
 
   /**
-   * Button field in *TextAndImage → Imge on left → Primary*
+   * Button field in *TextAndImage → Image on left → Primary*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **API ID Path**: text_and_image.imgeOnLeft.primary.button
+   * - **API ID Path**: text_and_image.imageOnLeft.primary.button
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   button: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 
   /**
-   * Background Image field in *TextAndImage → Imge on left → Primary*
+   * Background Image field in *TextAndImage → Image on left → Primary*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: text_and_image.imgeOnLeft.primary.background_image
+   * - **API ID Path**: text_and_image.imageOnLeft.primary.background_image
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   background_image: prismic.ImageField<never>;
 
   /**
-   * Foreground Image field in *TextAndImage → Imge on left → Primary*
+   * Foreground Image field in *TextAndImage → Image on left → Primary*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: text_and_image.imgeOnLeft.primary.foreground_image
+   * - **API ID Path**: text_and_image.imageOnLeft.primary.foreground_image
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   foreground_image: prismic.ImageField<never>;
 }
 
 /**
- * Imge on left variation for TextAndImage Slice
+ * Image on left variation for TextAndImage Slice
  *
- * - **API ID**: `imgeOnLeft`
+ * - **API ID**: `imageOnLeft`
  * - **Description**: Default
  * - **Documentation**: https://prismic.io/docs/slice
  */
-export type TextAndImageSliceImgeOnLeft = prismic.SharedSliceVariation<
-  "imgeOnLeft",
-  Simplify<TextAndImageSliceImgeOnLeftPrimary>,
+export type TextAndImageSliceImageOnLeft = prismic.SharedSliceVariation<
+  "imageOnLeft",
+  Simplify<TextAndImageSliceImageOnLeftPrimary>,
   never
 >;
 
@@ -866,7 +866,7 @@ export type TextAndImageSliceImgeOnLeft = prismic.SharedSliceVariation<
  */
 type TextAndImageSliceVariation =
   | TextAndImageSliceDefault
-  | TextAndImageSliceImgeOnLeft;
+  | TextAndImageSliceImageOnLeft;
 
 /**
  * TextAndImage Shared Slice
@@ -978,10 +978,10 @@ declare module "@prismicio/client" {
       TeamGridSliceDefault,
       TextAndImageSlice,
       TextAndImageSliceDefaultPrimary,
-      TextAndImageSliceImgeOnLeftPrimary,
+      TextAndImageSliceImageOnLeftPrimary,
       TextAndImageSliceVariation,
       TextAndImageSliceDefault,
-      TextAndImageSliceImgeOnLeft,
+      TextAndImageSliceImageOnLeft,
       VideoBlockSlice,
       VideoBlockSliceDefaultPrimary,
       VideoBlockSliceVariation,

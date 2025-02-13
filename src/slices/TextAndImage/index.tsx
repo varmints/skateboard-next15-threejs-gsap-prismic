@@ -26,7 +26,7 @@ export type TextAndImageProps = SliceComponentProps<Content.TextAndImageSlice>;
 /**
  * Component for "TextAndImage" Slices.
  */
-const TextAndImage = ({ slice, index }: TextAndImageProps): JSX.Element => {
+const TextAndImage = ({ slice, index }: TextAndImageProps) => {
   const theme = slice.primary.theme;
   return (
     <Bounded

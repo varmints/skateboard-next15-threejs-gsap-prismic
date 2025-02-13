@@ -16,7 +16,7 @@ export type VideoBlockProps = SliceComponentProps<Content.VideoBlockSlice>;
 /**
  * Component for "VideoBlock" Slices.
  */
-const VideoBlock = ({ slice }: VideoBlockProps): JSX.Element => {
+const VideoBlock = ({ slice }: VideoBlockProps) => {
   return (
     <Bounded
       data-slice-type={slice.slice_type}

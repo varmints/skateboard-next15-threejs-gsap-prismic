@@ -90,7 +90,7 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "imgeOnLeft",
+		"variation": "imageOnLeft",
 		"primary": {
 			"theme": {
 				"__TYPE__": "FieldContent",
@@ -103,7 +103,7 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Upper"
+							"text": "Smooth"
 						}
 					}
 				]
@@ -114,30 +114,30 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Laborum deserunt quis nisi. Ad eiusmod proident officia."
+							"text": "Reprehenderit aliqua amet dolore cupidatat dolore commodo aliqua."
 						}
 					}
 				]
 			},
 			"button": {
-				"key": "ee7c63ed-f776-4b6f-8bc2-97a01c3301b7",
+				"key": "6b4672ba-8096-405a-b7bb-38d11a9210ca",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
-					"url": "http://twitter.com",
-					"text": "suddenly"
+					"url": "http://google.com",
+					"text": "mad"
 				}
 			},
 			"background_image": {
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-					"width": 4000,
-					"height": 4000
+					"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+					"width": 3810,
+					"height": 5715
 				},
-				"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-				"width": 4000,
-				"height": 4000,
+				"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+				"width": 3810,
+				"height": 5715,
 				"edit": {
 					"zoom": 1,
 					"crop": {
@@ -152,16 +152,15 @@
 				"thumbnails": {}
 			},
 			"foreground_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
-					"width": 2545,
-					"height": 2545
+					"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+					"width": 4000,
+					"height": 4000
 				},
-				"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
-				"width": 2545,
-				"height": 2545,
+				"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+				"width": 4000,
+				"height": 4000,
 				"edit": {
 					"zoom": 1,
 					"crop": {
@@ -170,6 +169,9 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},
